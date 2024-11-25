@@ -11,6 +11,8 @@ from Pages.open_target_app_pg import TargetAppPage
 from Pages.target_login import TargetLogin
 from Pages.help_page import HelpPage
 from Pages.email_pw_invalid import EmailPwAccount
+from Pages.jordan_colors import JordanColorway
+
 class Application:
 
     def __init__(self,driver):
@@ -26,5 +28,6 @@ class Application:
         self.target_login = TargetLogin(driver)
         self.help_page = HelpPage(driver)
         self.email_pw_invalid = EmailPwAccount(driver)
+        self.jordan_colors = JordanColorway(driver)
 
 
